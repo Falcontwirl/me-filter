@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+# large per-pair outputs stay on the cluster; tables, summaries and frozen heads are committed
+results/raw/
+results/upstream/
+results/heads/*/samples/
+logs/*
+!logs/.gitkeep
+.venv-local/
+/models/
+third_party/filter/

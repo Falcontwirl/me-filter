@@ -1,0 +1,13 @@
+{
+  "_note": "Held-out tier B2: categories absent from upstream objects.json, authored for this project. A category is kept for mechanistic analysis only if baseline accuracy is >= 90% (experiments/01_baseline.py).",
+  "categories": {
+    "medical equipment": ["Stethoscope", "Syringe", "Scalpel", "Wheelchair", "Crutch", "Splint", "Gurney", "Catheter", "Tourniquet", "Otoscope", "Forceps", "Stretcher", "Tongue depressor", "Bedpan", "Speculum"],
+    "astronomical object": ["Jupiter", "Neptune", "Uranus", "Venus", "Pluto", "Comet", "Asteroid", "Nebula", "Quasar", "Pulsar", "Meteor", "Supernova", "Black hole", "Sirius", "Andromeda"],
+    "geological formation": ["Canyon", "Glacier", "Volcano", "Mesa", "Plateau", "Fjord", "Stalactite", "Geyser", "Butte", "Cavern", "Sinkhole", "Dune", "Atoll", "Ravine", "Moraine"]
+  },
+  "exclude_categories": {
+    "medical equipment": ["bathroom item", "building"],
+    "bathroom item": ["medical equipment"],
+    "building": ["medical equipment"]
+  }
+}

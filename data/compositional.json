@@ -1,0 +1,172 @@
+{
+  "_note": "RQ3 predicates. 'match' items satisfy the full predicate; 'lure_a' satisfy only the first component, 'lure_b' only the second. 'avoid' lists upstream categories that must not supply neutral distractors (they could accidentally satisfy the predicate or a component). Every list built from this file has exactly one 'match' item. 'dest_avoid' lists categories that cannot be the simple predicate paired with this one (a lure or match item would also satisfy it).",
+  "template": "<_options_>\nWhich among these objects mentioned above is <_category_>?\nAnswer:",
+  "predicates": {
+    "red_fruit": {
+      "type": "conjunction",
+      "phrase": "a red fruit",
+      "components": [
+        "a fruit",
+        "a red object"
+      ],
+      "match": [
+        "Strawberry",
+        "Cherry",
+        "Raspberry",
+        "Cranberry",
+        "Pomegranate"
+      ],
+      "lure_a": [
+        "Banana",
+        "Lemon",
+        "Blueberry",
+        "Lime",
+        "Pear",
+        "Coconut"
+      ],
+      "lure_b": [
+        "Fire truck",
+        "Ladybug",
+        "Ruby",
+        "Stop sign",
+        "Brick",
+        "Lipstick"
+      ],
+      "avoid": [
+        "fruit",
+        "vegetable",
+        "flower",
+        "tree"
+      ],
+      "dest_avoid": [
+        "animal",
+        "flower",
+        "fruit",
+        "tree",
+        "vegetable",
+        "vehicle"
+      ]
+    },
+    "flying_animal": {
+      "type": "conjunction",
+      "phrase": "an animal that can fly",
+      "components": [
+        "an animal",
+        "a thing that can fly"
+      ],
+      "match": [
+        "Eagle",
+        "Parrot",
+        "Owl",
+        "Pigeon",
+        "Hawk",
+        "Butterfly",
+        "Crow",
+        "Sparrow",
+        "Hummingbird"
+      ],
+      "lure_a": [
+        "Dog",
+        "Cat",
+        "Elephant",
+        "Horse",
+        "Penguin",
+        "Snake",
+        "Cow",
+        "Tiger"
+      ],
+      "lure_b": [
+        "Airplane",
+        "Helicopter",
+        "Kite",
+        "Drone",
+        "Hot air balloon",
+        "Rocket"
+      ],
+      "avoid": [
+        "animal",
+        "vehicle"
+      ],
+      "dest_avoid": [
+        "animal",
+        "sport equipment",
+        "vehicle"
+      ]
+    },
+    "nonmammal_animal": {
+      "type": "negation",
+      "phrase": "an animal that is not a mammal",
+      "components": [
+        "an animal",
+        "not a mammal"
+      ],
+      "match": [
+        "Eagle",
+        "Snake",
+        "Frog",
+        "Shark",
+        "Parrot",
+        "Crocodile",
+        "Turtle",
+        "Lizard",
+        "Salmon",
+        "Octopus"
+      ],
+      "lure_a": [
+        "Dog",
+        "Cat",
+        "Elephant",
+        "Tiger",
+        "Lion",
+        "Horse",
+        "Cow",
+        "Rabbit",
+        "Whale"
+      ],
+      "lure_b": [],
+      "avoid": [
+        "animal"
+      ],
+      "dest_avoid": [
+        "animal"
+      ]
+    },
+    "fruit_or_vehicle": {
+      "type": "disjunction",
+      "phrase": "a fruit or a vehicle",
+      "components": [
+        "a fruit",
+        "a vehicle"
+      ],
+      "match_from_categories": [
+        "fruit",
+        "vehicle"
+      ],
+      "lure_a": [],
+      "lure_b": [],
+      "avoid": [
+        "fruit",
+        "vegetable",
+        "flower",
+        "tree",
+        "vehicle"
+      ],
+      "dest_avoid": [
+        "flower",
+        "fruit",
+        "tree",
+        "vegetable",
+        "vehicle"
+      ]
+    }
+  },
+  "destination_categories": [
+    "furniture",
+    "clothing",
+    "building",
+    "sport equipment",
+    "animal",
+    "fruit",
+    "vehicle"
+  ]
+}

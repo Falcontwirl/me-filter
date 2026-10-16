@@ -1,0 +1,81 @@
+{
+  "hash": "e671f6a33280",
+  "discovery": [
+    "fruit",
+    "vegetable",
+    "flower",
+    "tree",
+    "vehicle",
+    "furniture",
+    "animal",
+    "clothing",
+    "building",
+    "sport equipment"
+  ],
+  "heldout_b1": [
+    "electronics",
+    "kitchen appliance",
+    "office supply",
+    "music instrument",
+    "bathroom item",
+    "jewelry"
+  ],
+  "heldout_b2": [
+    "medical equipment",
+    "astronomical object",
+    "geological formation"
+  ],
+  "b2_items": {
+    "medical equipment": [
+      "Stethoscope",
+      "Syringe",
+      "Scalpel",
+      "Wheelchair",
+      "Crutch",
+      "Splint",
+      "Gurney",
+      "Catheter",
+      "Tourniquet",
+      "Otoscope",
+      "Forceps",
+      "Stretcher",
+      "Tongue depressor",
+      "Bedpan",
+      "Speculum"
+    ],
+    "astronomical object": [
+      "Jupiter",
+      "Neptune",
+      "Uranus",
+      "Venus",
+      "Pluto",
+      "Comet",
+      "Asteroid",
+      "Nebula",
+      "Quasar",
+      "Pulsar",
+      "Meteor",
+      "Supernova",
+      "Black hole",
+      "Sirius",
+      "Andromeda"
+    ],
+    "geological formation": [
+      "Canyon",
+      "Glacier",
+      "Volcano",
+      "Mesa",
+      "Plateau",
+      "Fjord",
+      "Stalactite",
+      "Geyser",
+      "Butte",
+      "Cavern",
+      "Sinkhole",
+      "Dune",
+      "Atoll",
+      "Ravine",
+      "Moraine"
+    ]
+  }
+}

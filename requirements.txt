@@ -1,0 +1,25 @@
+# Key pins taken from third_party/filter/conda_env.yml (the upstream environment).
+# Install torch first with the CUDA wheel index, see slurm/setup_env.sh.
+torch==2.7.0
+transformers==4.55.3
+tokenizers==0.21.1
+accelerate==1.6.0
+huggingface-hub==0.34.3
+safetensors==0.5.3
+nnsight==0.5.2
+baukit @ git+https://github.com/davidbau/baukit
+dataclasses-json==0.6.7
+circuitsvis==1.43.3
+numpy==2.2.5
+pandas==2.2.3
+scipy==1.16.0
+matplotlib==3.10.1
+pyyaml==6.0.2
+tqdm==4.67.1
+# imported at module level by upstream utils, unused by us
+anthropic==0.50.0
+openai==1.76.0
+nltk==3.9.1
+wandb==0.19.10
+ipython
+pytest
