@@ -4,7 +4,7 @@
 export REPO_DIR="${REPO_DIR:-$HOME/me-filter}"
 export SCRATCH_DIR="${SCRATCH_DIR:-$HOME/scratch/me-filter}"   # HF model cache (~16 GB)
 export CONDA_ENV="${CONDA_ENV:-filtergen}"
-export CONDA_MODULE="${CONDA_MODULE:-miniconda3}"              # `module avail conda` to confirm the name
+export CONDA_MODULE="${CONDA_MODULE:-anaconda3/2023.09-0-aqbc}" # from `module avail conda` on Oscar
 
 export HF_HOME="$SCRATCH_DIR/hf"
 export PYTHONPATH="$REPO_DIR:$REPO_DIR/third_party/filter"

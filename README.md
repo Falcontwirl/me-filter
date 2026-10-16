@@ -20,7 +20,7 @@ This project extends *LLMs Process Lists With General Filter Heads* (Sharma et a
 
 ```bash
 git clone <this repo> ~/me-filter && cd ~/me-filter
-# edit slurm/config.sh if your paths or conda module differ (`module avail conda`)
+# slurm/config.sh is set for Oscar (anaconda3/2023.09-0-aqbc); edit it if paths differ
 bash slurm/setup_env.sh
 huggingface-cli login     # account needs access to meta-llama/Llama-3.1-8B-Instruct
 ```
