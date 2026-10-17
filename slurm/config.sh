@@ -6,7 +6,8 @@ export SCRATCH_DIR="${SCRATCH_DIR:-$HOME/scratch/me-filter}"   # HF model cache 
 export CONDA_ENV="${CONDA_ENV:-filtergen}"
 export CONDA_MODULE="${CONDA_MODULE:-anaconda3/2023.09-0-aqbc}" # from `module avail conda` on Oscar
 
-export HF_HOME="$SCRATCH_DIR/hf"
+# Only the model cache goes to scratch; the login token stays in ~/.cache/huggingface/token
+export HF_HUB_CACHE="$SCRATCH_DIR/hf"
 export PYTHONPATH="$REPO_DIR:$REPO_DIR/third_party/filter"
 export TOKENIZERS_PARALLELISM=false
 # HF token for the gated Llama weights: run `huggingface-cli login` once, or
