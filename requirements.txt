@@ -1,8 +1,8 @@
 # Key pins taken from third_party/filter/conda_env.yml (the upstream environment).
 # Install torch first with the CUDA wheel index, see slurm/setup_env.sh.
 torch==2.7.0
-transformers==4.55.3
-tokenizers==0.21.1
+transformers==4.57.1  # upstream conda_env.yml says 4.55.3, but its src/utils/typing.py needs Olmo3 (>=4.57)
+tokenizers==0.22.1  # required by transformers 4.57
 accelerate==1.6.0
 huggingface-hub==0.34.3
 safetensors==0.5.3

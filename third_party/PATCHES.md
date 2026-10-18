@@ -15,3 +15,7 @@ No upstream source files are modified. Workarounds live in `filtergen/` instead:
 - **Model weights are frozen** (`filtergen.upstream.load_model`). `get_optimal_head_mask_prev` never freezes the model, so `loss.backward()` would allocate gradients for all 8B weights (+16 GB).
 - **Mask training calls `get_optimal_head_mask_prev` directly** (`experiments/02_locate.py`). `scripts/locate_selection_heads.find_optimal_masks` reads `train_set` from module globals, and `opt_interface="updated"` crashes with a TypeError.
 - **Evaluation uses the settings from the authors' notebooks** (`notebooks/checking_head_generalization/select_one.ipynb`), not those in the locator's `validate()`. See `filtergen/evaluate.py`.
+
+## Dependency deviation from upstream `conda_env.yml`
+
+Upstream's `conda_env.yml` pins `transformers==4.55.3`, but `src/utils/typing.py` at the pinned commit references `transformers.Olmo3ForCausalLM`, which first appears in 4.57. Importing anything from `src` fails with `AttributeError` on 4.55.3 (our first Oscar smoke run, job 7553374). `requirements.txt` therefore pins `transformers==4.57.1` and `tokenizers==0.22.1` (required by 4.57). All other pins follow upstream.
